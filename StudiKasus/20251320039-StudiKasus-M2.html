@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - BukuKita</title>
+  </head>
+  <body>
+    <h1>Selamat Datang di BukuKita!</h1>
+    <h2>Toko Buku Online Terlengkap</h2>
+
+    <nav aria-label="Menu utama">
+      [ <a href="20251320039-StudiKasus-M2.html">Beranda</a> ] [
+      <a href="katalog.html">Katalog</a> ] [ <a href="promo.html">Promo</a> ] [
+      <a href="tentang.html">Tentang Kami</a> ] [
+      <a href="kontak.html">Kontak</a> ]
+    </nav>
+
+    <hr />
+
+    <h3>Tentang Kami</h3>
+    <p>
+      BukuKita adalah toko buku online yang didirikan sejak tahun 2020 dengan
+      misi untuk menyebarkan literasi ke seluruh penjuru Indonesia. Kami percaya
+      bahwa buku adalah jendela dunia, dan kami berkomitmen untuk menyediakan
+      akses mudah dan terjangkau ke berbagai jenis buku berkualitas bagi semua
+      kalangan.
+    </p>
+    <p>
+      Visi kami adalah menjadi platform toko buku online terdepan di Indonesia
+      yang inovatif dan terpercaya.
+    </p>
+
+    <hr />
+
+    <h2>Hubungi Kami</h2>
+    <form action="konfirmasi.html" method="get">
+      <p>
+        <label for="nama">Nama Lengkap:</label><br />
+        <input type="text" id="nama" name="nama" autocomplete="name" required />
+      </p>
+
+      <p>
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="telepon">Nomor Telepon:</label><br />
+        <input type="tel" id="telepon" name="telepon" autocomplete="tel" />
+      </p>
+
+      <p>
+        <label for="topik">Topik Pesan:</label><br />
+        <select id="topik" name="topik">
+          <option value="pertanyaan-umum">Pertanyaan Umum</option>
+          <option value="pembelian-buku">Pembelian Buku</option>
+          <option value="pengiriman">Pengiriman</option>
+          <option value="keluhan">Keluhan</option>
+          <option value="lainnya">Lainnya</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="pesan">Pesan Anda:</label><br />
+        <textarea
+          id="pesan"
+          name="pesan"
+          rows="4"
+          cols="40"
+          required
+        ></textarea>
+      </p>
+
+      <p id="pertanyaan-sumber">Bagaimana Anda Mengetahui Kami? (Pilih satu)</p>
+      <div role="group" aria-labelledby="pertanyaan-sumber">
+        <input
+          type="radio"
+          id="media-sosial"
+          name="sumber"
+          value="media-sosial"
+          required
+        />
+        <label for="media-sosial">Media Sosial</label><br />
+        <input
+          type="radio"
+          id="mesin-pencari"
+          name="sumber"
+          value="mesin-pencari"
+        />
+        <label for="mesin-pencari">Mesin Pencari</label><br />
+        <input
+          type="radio"
+          id="rekomendasi-teman"
+          name="sumber"
+          value="rekomendasi-teman"
+        />
+        <label for="rekomendasi-teman">Rekomendasi Teman</label>
+      </div>
+
+      <p>
+        <input
+          type="checkbox"
+          id="syarat"
+          name="syarat"
+          value="setuju"
+          required
+        />
+        <label for="syarat">Setuju Syarat &amp; Ketentuan</label>
+      </p>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </body>
+</html>
