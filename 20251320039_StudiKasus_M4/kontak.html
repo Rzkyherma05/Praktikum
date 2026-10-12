@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Saya | Mahasiswa UKRI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand">Mahasiswa UKRI</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#proyek">Experience</a></li>
+          <li><a href="#kontak">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- JUDUL HALAMAN -->
+    <section class="kontak-hero">
+      <div class="container">
+        <h1>Hubungi Saya</h1>
+        <p>Ingin Berkonsultasi atau ada pertanyaan tentang Recipe dan Ingin Menyewa Chef bisa hubungi Saya</p>
+      </div>
+    </section>
+
+    <!-- ISI KONTAK -->
+    <section class="kontak-section">
+      <div class="container kontak-grid">
+
+        <!-- KIRI: INFORMASI KONTAK -->
+        <div class="kontak-info">
+          <h2>Informasi Kontak</h2>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-label">Email</span>
+              <p>rzky_herma@gmail.com</p>
+            </li>
+            <li>
+              <span class="info-label">WhatsApp</span>
+              <p>0813-8885-6242</p>
+            </li>
+            <li>
+              <span class="info-label">Lokasi</span>
+              <p>Jl. Taman Sari, Bandung, Jawa Barat, Indonesia</p>
+            </li>
+            <li>
+              <span class="info-label">Jam Respons</span>
+              <span>Senin - Jumat, 09.00 - 17.00 WIB</span>
+            </li>
+          </ul>
+
+          <h3>Media Sosial</h3>
+          <div class="sosmed">
+            <a href="https://instagram.com/rzky_herma" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+
+        <!-- KANAN: FORMULIR (tanpa JavaScript) -->
+        <div class="kontak-form">
+          <h2>Kirim Pesan</h2>
+
+          <form action="mailto:emailanda@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="Nama" placeholder="Nama lengkap Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" placeholder="email@contoh.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subjek">Subjek</label>
+              <input type="text" id="subjek" name="Subjek" placeholder="Judul pesan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" name="Pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-kirim">Kirim Pesan</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="kontak" class="footer">
+    <p>&copy; 2025 Mahasiswa UKRI. Dibuat dengan penuh semangat.</p>
+  </footer>
+
+</body>
+</html>

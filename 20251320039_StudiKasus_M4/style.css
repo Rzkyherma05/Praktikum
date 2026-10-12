@@ -1,0 +1,429 @@
+/* ===== Reset & Dasar ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #212529;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== Container (pengganti .container Bootstrap) ===== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 14px 0;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #007bff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-menu a {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: #007bff;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background-color: #e9ecef;
+  padding: 80px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  max-width: 480px;
+}
+
+.hero-content h1 {
+  color: #007bff;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 0.75rem;
+  margin: 18px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 4px;
+  border: 1px solid #1e7e34;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.foto-profil {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Section Proyek ===== */
+.proyek {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: block;                
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 14px;
+}
+
+.card-body h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.card-body p {
+  font-size: 0.65rem;
+  color: #495057;
+}
+
+/* ===== Halaman Detail Proyek ===== */
+.page-detail {
+  background-color: #f8f9fa;
+  padding: 40px 0 60px;
+}
+
+.detail-wrap {
+  max-width: 760px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.breadcrumb {
+  font-size: 0.7rem;
+  color: #6c757d;
+  margin-bottom: 16px;
+}
+
+.breadcrumb a {
+  color: #007bff;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.detail-img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.detail-title {
+  color: #007bff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.detail-desc {
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+.detail-sub {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 22px 0 8px;
+}
+
+.detail-list {
+  list-style: disc;
+  margin-left: 20px;
+  font-size: 0.85rem;
+}
+
+.detail-list li {
+  margin-bottom: 4px;
+}
+
+.tags span {
+  display: inline-block;
+  background-color: #e9ecef;
+  color: #212529;
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-right: 6px;
+}
+
+.detail-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid #dee2e6;
+}
+
+.back-link {
+  color: #007bff;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Halaman Kontak ===== */
+.kontak-hero {
+  background-color: #e9ecef;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.kontak-hero h1 {
+  color: #007bff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.kontak-hero p {
+  font-size: 0.8rem;
+  color: #495057;
+}
+
+.kontak-section {
+  background-color: #f8f9fa;
+  padding: 50px 0 60px;
+}
+
+.kontak-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.kontak-info,
+.kontak-form {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.kontak-info h2,
+.kontak-form h2 {
+  color: #007bff;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+
+.kontak-info h3 {
+  font-size: 0.85rem;
+  margin: 22px 0 10px;
+}
+
+/* daftar informasi */
+.info-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.8rem;
+}
+
+.info-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.info-list a {
+  color: #007bff;
+}
+
+.info-list a:hover {
+  text-decoration: underline;
+}
+
+/* media sosial */
+.sosmed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sosmed a {
+  background-color: #e9ecef;
+  font-size: 0.7rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sosmed a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* formulir */
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 9px 12px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-kirim {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+  padding: 9px 20px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 0.7rem;
+}
+
+/* ===== Responsif (layar kecil/HP) ===== */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
